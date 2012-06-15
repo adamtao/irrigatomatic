@@ -1,0 +1,29 @@
+body {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
+a:link,
+a:visited {
+  font-size: 10px;
+  color: blue;
+}
+
+/*-------------------------------------
+FLASHES
+--------------------------------------*/
+.alert {
+	text-align: left;
+	padding: 5px 5px 5px 30px;
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+.alert-success {
+	border: 1px solid #9c9;
+	color: #060;
+	background: url(/images/alertgood_icon.gif) #E2F9E3 left no-repeat;
+}
+.alert-error {
+	border: 1px solid #c99;
+	color: #fff;
+	background: url(/images/alertbad_icon.gif) #c00 left no-repeat;
+}

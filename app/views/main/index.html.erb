@@ -1,0 +1,13 @@
+<div style="background: #CCC; margin-bottom: 10px; padding: 10px;">
+<% ZONES.each_with_index do |zone,i| %>
+  <div style="margin-bottom: 5px; padding: 10px; background: #EEE"> 
+        Zone <%= i+1 %>: <%= zone %> <br/>
+        <%= link_to "Turn ON", turn_on_path(i+1) %> |
+        <%= link_to "Turn OFF", turn_off_path(i+1) %>
+		&nbsp; (<%= link_to "force on", force_on_path(i+1) -%>)
+  </div>
+<% end %>
+</div>
+
+<%= button_to "All OFF", all_off_path, method: :get %>
+
